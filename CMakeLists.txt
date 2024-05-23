@@ -25,7 +25,7 @@ find_package(rosidl_default_generators REQUIRED)
 # find_package(<dependency> REQUIRED)
 
 set(msg_files
-  "msg/task_msg.msg"
+  "msg/TaskMsg.msg"
 )
 
 
