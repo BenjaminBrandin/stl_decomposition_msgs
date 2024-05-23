@@ -1,11 +1,6 @@
 cmake_minimum_required(VERSION 3.5)
 project(stl_decomposition_msgs)
 
-# # Default to C99
-# if(NOT CMAKE_C_STANDARD)
-#   set(CMAKE_C_STANDARD 99)
-# endif()
-
 # Default to C++14
 if(NOT CMAKE_CXX_STANDARD)
   set(CMAKE_CXX_STANDARD 14)
@@ -19,6 +14,9 @@ endif()
 
 # find dependencies
 find_package(ament_cmake REQUIRED)
+find_package(rclcpp REQUIRED)
+find_package(geometry_msgs REQUIRED)
+find_package(std_msgs REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 # uncomment the following section in order to fill in
 # further dependencies manually.
@@ -26,6 +24,7 @@ find_package(rosidl_default_generators REQUIRED)
 
 set(msg_files
   "msg/TaskMsg.msg"
+  "msg/ModelStates.msg"
 )
 
 
@@ -34,6 +33,8 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   
 
   DEPENDENCIES
+  geometry_msgs
+  std_msgs
   
 
   ADD_LINTER_TESTS
