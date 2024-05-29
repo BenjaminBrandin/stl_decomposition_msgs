@@ -19,7 +19,6 @@ endif()
 # find dependencies
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
-find_package(geometry_msgs REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 # uncomment the following section in order to fill in
@@ -28,7 +27,6 @@ find_package(rosidl_default_generators REQUIRED)
 
 set(msg_files
   "msg/TaskMsg.msg"
-  "msg/ModelStates.msg"
 )
 
 
@@ -37,7 +35,6 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   
 
   DEPENDENCIES
-  geometry_msgs
   std_msgs
   
 
