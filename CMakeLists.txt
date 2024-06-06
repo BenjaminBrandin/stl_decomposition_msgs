@@ -27,6 +27,8 @@ find_package(rosidl_default_generators REQUIRED)
 
 set(msg_files
   "msg/TaskMsg.msg"
+  "msg/EdgeLeaderShip.msg"
+  "msg/LeaderShipTokens.msg"
 )
 
 
