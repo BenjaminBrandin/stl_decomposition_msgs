@@ -29,6 +29,7 @@ set(msg_files
   "msg/TaskMsg.msg"
   "msg/EdgeLeaderShip.msg"
   "msg/LeaderShipTokens.msg"
+  "msg/LeafNodes.msg"
 )
 
 
