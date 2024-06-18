@@ -30,6 +30,7 @@ set(msg_files
   "msg/EdgeLeaderShip.msg"
   "msg/LeaderShipTokens.msg"
   "msg/LeafNodes.msg"
+  "msg/ImpactMsg.msg"
 )
 
 
