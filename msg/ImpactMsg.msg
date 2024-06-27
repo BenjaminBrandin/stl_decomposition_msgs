@@ -1,4 +1,5 @@
-# This message is used to send the node's best or worst impact value  
+# This message is used to send the node i best or worst impact value to j 
 
-int32 node
+int32 i
+int32 j
 float32 impact
