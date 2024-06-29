@@ -1,0 +1,5 @@
+int32 i         # i is the node that sends the request 
+int32 j         # j is the node that i sends the request to and want a response from
+string type     # If you want the "best" or "worst" impact
+---
+float32 impact    # The best or worst impact value from the node j

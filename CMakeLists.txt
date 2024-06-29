@@ -33,9 +33,13 @@ set(msg_files
   "msg/ImpactMsg.msg"
 )
 
+set(srv_files
+  "srv/Impact.srv"
+)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
   ${msg_files}
+  ${srv_files}
   
 
   DEPENDENCIES
